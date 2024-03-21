@@ -1,0 +1,16 @@
+C:\Fabri\Programacion\CoderHouse\Tutormatch\bin\Debug\net6.0-windows\Vista.exe
+C:\Fabri\Programacion\CoderHouse\Tutormatch\bin\Debug\net6.0-windows\Vista.deps.json
+C:\Fabri\Programacion\CoderHouse\Tutormatch\bin\Debug\net6.0-windows\Vista.runtimeconfig.json
+C:\Fabri\Programacion\CoderHouse\Tutormatch\bin\Debug\net6.0-windows\Vista.dll
+C:\Fabri\Programacion\CoderHouse\Tutormatch\bin\Debug\net6.0-windows\Vista.pdb
+C:\Fabri\Programacion\CoderHouse\Tutormatch\obj\Debug\net6.0-windows\Tutormatch.Inicio.resources
+C:\Fabri\Programacion\CoderHouse\Tutormatch\obj\Debug\net6.0-windows\Vista.csproj.GenerateResource.cache
+C:\Fabri\Programacion\CoderHouse\Tutormatch\obj\Debug\net6.0-windows\Vista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Fabri\Programacion\CoderHouse\Tutormatch\obj\Debug\net6.0-windows\Vista.AssemblyInfoInputs.cache
+C:\Fabri\Programacion\CoderHouse\Tutormatch\obj\Debug\net6.0-windows\Vista.AssemblyInfo.cs
+C:\Fabri\Programacion\CoderHouse\Tutormatch\obj\Debug\net6.0-windows\Vista.csproj.CoreCompileInputs.cache
+C:\Fabri\Programacion\CoderHouse\Tutormatch\obj\Debug\net6.0-windows\Vista.dll
+C:\Fabri\Programacion\CoderHouse\Tutormatch\obj\Debug\net6.0-windows\refint\Vista.dll
+C:\Fabri\Programacion\CoderHouse\Tutormatch\obj\Debug\net6.0-windows\Vista.pdb
+C:\Fabri\Programacion\CoderHouse\Tutormatch\obj\Debug\net6.0-windows\Vista.genruntimeconfig.cache
+C:\Fabri\Programacion\CoderHouse\Tutormatch\obj\Debug\net6.0-windows\ref\Vista.dll
