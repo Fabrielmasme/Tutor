@@ -28,59 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            txtEmail = new TextBox();
+            btbIniciarSesionEstudiante = new Button();
+            tbxEmail = new TextBox();
             lblLogin = new Label();
-            txtContraseña = new TextBox();
+            tbxContraseña = new TextBox();
+            btnAtrasInicio = new Button();
+            btnOlvidasteContraseña = new Button();
+            btnNoTengoCuenta = new Button();
             SuspendLayout();
             // 
-            // button1
+            // btbIniciarSesionEstudiante
             // 
-            button1.Location = new Point(14, 243);
-            button1.Name = "button1";
-            button1.Size = new Size(225, 37);
-            button1.TabIndex = 0;
-            button1.Text = "INICIAR SESIÓN";
-            button1.UseVisualStyleBackColor = true;
+            btbIniciarSesionEstudiante.Location = new Point(12, 175);
+            btbIniciarSesionEstudiante.Name = "btbIniciarSesionEstudiante";
+            btbIniciarSesionEstudiante.Size = new Size(225, 37);
+            btbIniciarSesionEstudiante.TabIndex = 0;
+            btbIniciarSesionEstudiante.Text = "INICIAR SESIÓN";
+            btbIniciarSesionEstudiante.UseVisualStyleBackColor = true;
+            btbIniciarSesionEstudiante.Click += button1_Click;
             // 
-            // txtEmail
+            // tbxEmail
             // 
-            txtEmail.BorderStyle = BorderStyle.FixedSingle;
-            txtEmail.Location = new Point(14, 85);
-            txtEmail.Margin = new Padding(5, 3, 3, 3);
-            txtEmail.Name = "txtEmail";
-            txtEmail.PlaceholderText = "Ingrese Email:";
-            txtEmail.Size = new Size(225, 23);
-            txtEmail.TabIndex = 2;
+            tbxEmail.BorderStyle = BorderStyle.FixedSingle;
+            tbxEmail.Location = new Point(17, 77);
+            tbxEmail.Margin = new Padding(5, 3, 3, 3);
+            tbxEmail.Name = "tbxEmail";
+            tbxEmail.PlaceholderText = "Ingrese Email:";
+            tbxEmail.Size = new Size(225, 23);
+            tbxEmail.TabIndex = 2;
+            tbxEmail.TextChanged += txtEmail_TextChanged;
             // 
             // lblLogin
             // 
             lblLogin.AutoSize = true;
-            lblLogin.Location = new Point(108, 29);
+            lblLogin.BackColor = Color.White;
+            lblLogin.Location = new Point(108, 42);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(42, 15);
             lblLogin.TabIndex = 1;
             lblLogin.Text = "LOGIN";
             // 
-            // txtContraseña
+            // tbxContraseña
             // 
-            txtContraseña.BorderStyle = BorderStyle.FixedSingle;
-            txtContraseña.Location = new Point(14, 152);
-            txtContraseña.Margin = new Padding(5, 3, 3, 3);
-            txtContraseña.Name = "txtContraseña";
-            txtContraseña.PlaceholderText = "Ingrese Contraseña:";
-            txtContraseña.Size = new Size(225, 23);
-            txtContraseña.TabIndex = 3;
+            tbxContraseña.BorderStyle = BorderStyle.FixedSingle;
+            tbxContraseña.Location = new Point(17, 126);
+            tbxContraseña.Margin = new Padding(5, 3, 3, 3);
+            tbxContraseña.Name = "tbxContraseña";
+            tbxContraseña.PlaceholderText = "Ingrese Contraseña:";
+            tbxContraseña.Size = new Size(225, 23);
+            tbxContraseña.TabIndex = 3;
+            tbxContraseña.TextChanged += tbxContraseña_TextChanged;
+            // 
+            // btnAtrasInicio
+            // 
+            btnAtrasInicio.Location = new Point(14, 12);
+            btnAtrasInicio.Name = "btnAtrasInicio";
+            btnAtrasInicio.Size = new Size(50, 23);
+            btnAtrasInicio.TabIndex = 4;
+            btnAtrasInicio.Text = "ATRAS";
+            btnAtrasInicio.UseVisualStyleBackColor = true;
+            btnAtrasInicio.Click += btnAtrasInicio_Click;
+            // 
+            // btnOlvidasteContraseña
+            // 
+            btnOlvidasteContraseña.Location = new Point(48, 236);
+            btnOlvidasteContraseña.Name = "btnOlvidasteContraseña";
+            btnOlvidasteContraseña.Size = new Size(153, 23);
+            btnOlvidasteContraseña.TabIndex = 5;
+            btnOlvidasteContraseña.Text = "¿Olvidaste tu contraseña?";
+            btnOlvidasteContraseña.UseVisualStyleBackColor = true;
+            btnOlvidasteContraseña.Click += btnOlvidasteContraseña_Click;
+            // 
+            // btnNoTengoCuenta
+            // 
+            btnNoTengoCuenta.Location = new Point(48, 275);
+            btnNoTengoCuenta.Name = "btnNoTengoCuenta";
+            btnNoTengoCuenta.Size = new Size(153, 23);
+            btnNoTengoCuenta.TabIndex = 6;
+            btnNoTengoCuenta.Text = "No tengo una cuenta";
+            btnNoTengoCuenta.UseVisualStyleBackColor = true;
+            btnNoTengoCuenta.Click += btnNoTengoCuenta_Click;
             // 
             // LoginEstudiante
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(txtContraseña);
-            Controls.Add(txtEmail);
+            BackColor = Color.FromArgb(0, 48, 73);
+            ClientSize = new Size(254, 310);
+            Controls.Add(btnNoTengoCuenta);
+            Controls.Add(btnOlvidasteContraseña);
+            Controls.Add(btnAtrasInicio);
+            Controls.Add(tbxContraseña);
+            Controls.Add(tbxEmail);
             Controls.Add(lblLogin);
-            Controls.Add(button1);
+            Controls.Add(btbIniciarSesionEstudiante);
             Name = "LoginEstudiante";
             Text = "Login";
             ResumeLayout(false);
@@ -89,9 +130,12 @@
 
         #endregion
 
-        private Button button1;
-        private TextBox txtEmail;
+        private Button btbIniciarSesionEstudiante;
+        private TextBox tbxEmail;
         private Label lblLogin;
-        private TextBox txtContraseña;
+        private TextBox tbxContraseña;
+        private Button btnAtrasInicio;
+        private Button btnOlvidasteContraseña;
+        private Button btnNoTengoCuenta;
     }
 }

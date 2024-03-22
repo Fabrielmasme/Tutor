@@ -36,19 +36,20 @@
             // btnEstudiante
             // 
             btnEstudiante.BackColor = Color.FromArgb(119, 221, 119);
-            btnEstudiante.Location = new Point(112, 78);
+            btnEstudiante.Location = new Point(32, 76);
             btnEstudiante.Name = "btnEstudiante";
-            btnEstudiante.Size = new Size(123, 23);
+            btnEstudiante.Size = new Size(195, 23);
             btnEstudiante.TabIndex = 0;
             btnEstudiante.Text = "ESTUDIANTE";
             btnEstudiante.UseVisualStyleBackColor = false;
+            btnEstudiante.Click += btnEstudiante_Click;
             // 
             // btnProfesor
             // 
             btnProfesor.BackColor = Color.FromArgb(119, 221, 119);
-            btnProfesor.Location = new Point(112, 232);
+            btnProfesor.Location = new Point(32, 240);
             btnProfesor.Name = "btnProfesor";
-            btnProfesor.Size = new Size(123, 23);
+            btnProfesor.Size = new Size(195, 23);
             btnProfesor.TabIndex = 1;
             btnProfesor.Text = "PROFESOR";
             btnProfesor.UseVisualStyleBackColor = false;
@@ -58,19 +59,19 @@
             txtQueEres.AutoSize = true;
             txtQueEres.BackColor = Color.FromArgb(255, 241, 104);
             txtQueEres.BorderStyle = BorderStyle.FixedSingle;
-            txtQueEres.Location = new Point(112, 160);
+            txtQueEres.Location = new Point(62, 164);
             txtQueEres.Name = "txtQueEres";
             txtQueEres.Size = new Size(125, 17);
             txtQueEres.TabIndex = 2;
             txtQueEres.Text = "¿Como queres iniciar?";
-            txtQueEres.Click += this.txtQueEres_Click;
+            txtQueEres.Click += txtQueEres_Click;
             // 
             // Inicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 48, 73);
-            ClientSize = new Size(368, 352);
+            ClientSize = new Size(258, 318);
             Controls.Add(txtQueEres);
             Controls.Add(btnProfesor);
             Controls.Add(btnEstudiante);
